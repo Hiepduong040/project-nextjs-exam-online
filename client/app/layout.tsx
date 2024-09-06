@@ -1,8 +1,8 @@
 "use client";
 import "jsvectormap/dist/jsvectormap.css";
 import "flatpickr/dist/flatpickr.min.css";
-import "@/css/satoshi.css";
-import "@/css/style.css";
+import "@/styles/satoshi.css";
+import "@/styles/style.css";
 import React, { useEffect, useState } from "react";
 import Loader from "@/components/common/Loader";
 
@@ -14,7 +14,6 @@ export default function RootLayout({
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [loading, setLoading] = useState<boolean>(true);
 
-  // const pathname = usePathname();
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 1000);

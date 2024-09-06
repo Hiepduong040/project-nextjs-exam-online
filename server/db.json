@@ -20,6 +20,15 @@
         }
     ],
 
+    "admin":[
+        {
+            "username":"admin1",
+            "password":"admin123",
+            "email":"admin123@gmail.com",
+            "profilePicture":"https://picture.com/images/admin1",
+            "status":1
+        }
+    ],
 
     "courses":[
         {

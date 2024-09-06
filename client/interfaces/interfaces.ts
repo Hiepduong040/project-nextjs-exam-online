@@ -1,4 +1,4 @@
-interface User {
+export  interface User {
   id: number;
   username: string;
   password: string; 
@@ -8,20 +8,20 @@ interface User {
   status: number; 
 }
 
-interface Course {
+export  interface Course {
   id: number;
   title: string;
   description: string;
 }
 
-interface ExamSubject {
+export  interface ExamSubject {
   id: number;
   title: string;
   description: string;
   coursesId: number;
 }
 
-interface Exam {
+export  interface Exam {
   id: number;
   title: string;
   description: string;
@@ -29,7 +29,7 @@ interface Exam {
   examSubjectsId: number;
 }
 
-interface Question {
+export  interface Question {
   id: number;
   question: string;
   examId: number;
@@ -37,11 +37,17 @@ interface Question {
   answer: string;
 }
 
-interface UserAnswer {
+export interface UserAnswer {
   id: number;
   userId: number;
   exampId: number;
   score: number;
 }
 
-6
+export interface Admin {
+  username: string;
+  password: string;
+  email: string;
+  profilePicture: string;
+  status: number;
+}
